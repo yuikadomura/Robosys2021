@@ -1,5 +1,8 @@
 #ロボットシステム学2021年度課題1
-このプログラムは上田隆一先生が担当する2021年ロボットシステム学の課題1で作成したものであり, Rasberry Pi4に接続したLEDを点灯させるプログラムである. 講義動画[1]内で上田先生が作成したプログラムを参考にしている.
+
+このプログラムは上田隆一先生が担当する2021年ロボットシステム学の課題1で作成したものであり, Rasberry Pi4に接続したLEDを点灯させるプログラムである. 
+
+講義動画[1]内で上田先生が作成したプログラムを参考にしている.
 
 
 ●システムの概要
@@ -71,4 +74,5 @@ https://www.gnu.org/licenses/licenses.ja.html
 [1]
 https://cit.manaba.jp/ct/link_iframe_balloon?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DxQW8-FNuboo
 
-Readme の書き方はhttps://style.potepan.com/articles/33682.html　のサイトと, slackの#課題1にあるYuzukiimaiのものhttps://github.com/yuzukiimai/robosys1　を参考にさせていただいた.
+Readme の書き方はhttps://style.potepan.com/articles/33682.html
+のサイトと, slackの#課題1にあるYuzukiimaiのものhttps://github.com/yuzukiimai/robosys1　を参考にさせていただいた.
