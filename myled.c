@@ -20,55 +20,55 @@ static volatile u32 *gpio_base = NULL;
 
 static ssize_t led_write(struct file*flip, const char* buf, size_t count, loff_t* pos)
 {
-	        char c;
+	char c;
 
-		        if(copy_from_user(&c,buf,sizeof(char)))
-				                return -EFAULT;
+	if(copy_from_user(&c,buf,sizeof(char)))
+	return -EFAULT;
 
-			        if(c == '0')
-					                gpio_base[10] = 1 << 25;
-				        else if(c == '1'){
-						                    gpio_base[7] = 1 << 25;
-								            }
+	if(c == '0')
+		gpio_base[10] = 1 << 25;
+	else if(c == '1'){
+		gpio_base[7] = 1 << 25;
+	}
 
-					        printk(KERN_INFO"recive %c\n",c);
-						        return 1;
+	printk(KERN_INFO"recive %c\n",c);
+	return 1;
 }
 
 static ssize_t sushi_read(struct file* flip, char* buf, size_t count, loff_t* pos)
 {
-	        int size = 0;
-		        char sushi [] = {'s', 'u', 's', 'h', 'i',0x0A};
-			        if(copy_to_user(buf+size,(const char *)sushi, sizeof(sushi))){
-					                printk(KERN_INFO"sushi : copy_to_user failed\n");
-							        return -EFAULT;
-								        }
-				        size += sizeof(sushi);
-					        return size;
+	int size = 0;
+	char sushi [] = {'s', 'u', 's', 'h', 'i',0x0A};
+	if(copy_to_user(buf+size,(const char *)sushi, sizeof(sushi))){
+		printk(KERN_INFO"sushi : copy_to_user failed\n");
+		return -EFAULT;
+	}
+	size += sizeof(sushi);
+	return size;
 
 }
 
 static struct file_operations led_fops = {
-	        .owner = THIS_MODULE,
-		        .write = led_write,
-			        .read = sushi_read
+	.owner = THIS_MODULE,
+	.write = led_write,
+	.read = sushi_read
 };
 
 static int __init init_mod(void)
 {
-	        int retval;
-		        retval = alloc_chrdev_region(&dev , 0, 1, "myled");
-			        if(retval < 0){
-					                printk(KERN_ERR "alloc_chrdev_region failed.\n");
-							                return retval;
-									        }
+	int retval;
+	retval = alloc_chrdev_region(&dev , 0, 1, "myled");
+	if(retval < 0){
+		printk(KERN_ERR "alloc_chrdev_region failed.\n");
+		return retval;
+	}
 
-				        printk(KERN_INFO "%s is loaded. major:%d\n",__FILE__, MAJOR(dev));
+	printk(KERN_INFO "%s is loaded. major:%d\n",__FILE__, MAJOR(dev));
 
-					        cdev_init(&cdv, &led_fops);
-						        retval = cdev_add(&cdv, dev, 1);
-							        if(retval < 0){
-									                printk(KERN_ERR"cdev_add failed. major:%d, minor:%d\n",MAJOR(dev) ,MINOR(dev));
+	cdev_init(&cdv, &led_fops);
+	retval = cdev_add(&cdv, dev, 1);
+	if(retval < 0){
+		printk(KERN_ERR"cdev_add failed. major:%d, minor:%d\n",MAJOR(dev) ,MINOR(dev));
                 return retval;
         }
 
