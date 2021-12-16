@@ -5,10 +5,12 @@
 講義動画[1]内で上田先生が作成したプログラムを参考にしている.
 
 
+
 ## ●システムの概要
 
 Rasberry Pi4に接続された赤いLEDをシンプルに点灯消灯させる.
 GPIO25ピンを使用している.
+
 
 
 ## ●動作環境 
@@ -16,6 +18,7 @@ GPIO25ピンを使用している.
 ・Rasberry Pi 4
 
 ・Os : Ubuntu 20.04 server
+
 
 
 ## ●使用したもの 
@@ -29,6 +32,7 @@ GPIO25ピンを使用している.
 ・ブレッドボード BB-601(白) x 1
 
 ・ジャンパー線 x 2(オス1メス1)
+
 
 
 ## ●使用方法
@@ -52,21 +56,27 @@ GPIO25ピンを使用している.
 
  $ make clean
 
+
 ### 【LED(赤)を点灯する】 
 
  $ echo 1 > /dev/myled0
+
 
 ### 【LED(赤)を消灯する】 
 
  $ echo 0 > /dev/myled0
 
 
+
 ## ●実行時の動画 
 
-https://t.co/x2qWj111Z6
+[Youtube](https://t.co/x2qWj111Z6)
+
+
 
 ## ●ライセンス
 [GNL General Public Licenses](https://www.gnu.org/licenses/licenses.ja.html)
+
 
 
 ## ●参考
