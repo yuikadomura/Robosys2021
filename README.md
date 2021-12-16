@@ -66,15 +66,15 @@ GPIO25ピンを使用している.
 https://t.co/x2qWj111Z6
 
 ## ●ライセンス
-https://www.gnu.org/licenses/licenses.ja.html
+[GNL General Public Licenses](https://www.gnu.org/licenses/licenses.ja.html)
 
 
 ## ●参考
 [1]
-https://cit.manaba.jp/ct/link_iframe_balloon?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DxQW8-FNuboo
+[第7.8回講義動画](https://cit.manaba.jp/ct/link_iframe_balloon?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DxQW8-FNuboo)
 
-Readme の書き方は
-https://style.potepan.com/articles/33682.html
-のサイトと, slackの#課題1にあるYuzukiimaiのもの
-https://github.com/yuzukiimai/robosys1　
+Readme の書き方について
+[【GitHub】READMEって使ってる？使い方と書き方を確認しよう](https://style.potepan.com/articles/33682.html)のサイトと, 
+slackの#課題1にあるYuzukiimaiさんのもの
+[こちら](https://github.com/yuzukiimai/robosys1)　
 を参考にさせていただいた.
