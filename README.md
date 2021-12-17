@@ -83,8 +83,6 @@ GPIO25ピンを使用している.
 [1]
 [第7.8回講義動画](https://cit.manaba.jp/ct/link_iframe_balloon?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DxQW8-FNuboo)
 
-Readme の書き方について
-[【GitHub】READMEって使ってる？使い方と書き方を確認しよう](https://style.potepan.com/articles/33682.html)のサイトと, 
-slackの#課題1にあるYuzukiimaiさんのもの
-[こちら](https://github.com/yuzukiimai/robosys1)　
-を参考にさせていただいた.
+Readme の書き方について[【GitHub】READMEって使ってる？使い方と書き方を確認しよう](https://style.potepan.com/articles/33682.html)のサイトと, 
+slackの#課題1にあるYuzukiimaiさんのもの[こちら](https://github.com/yuzukiimai/robosys1)と
+MinoriKatouさんのもの[こちら](https://t.co/YZAoL8BKG8)を参考にさせていただいた.
