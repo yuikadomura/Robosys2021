@@ -1,5 +1,5 @@
  /* SPDX-License-Identifer: GPL-3.0 */
- /* *Copyright (c) 2021 Ryuichi Ueda and Yui Kadomura. All rights reserved. */
+ /* *Copyright (c) 2021 Ryuichi Ueda. All rights reserved. */
 
 #include <linux/module.h>
 #include <linux/fs.h>
